@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Encriptador Alura</title>
+    </head>
+
+    <body>
+        <header class="logos">
+            <img src="Imagenes/Alura-Logo.png" alt="Logo de Alura" class="logoAlura">
+                <a href="https://www.linkedin.com/in/valentina-angeletti19"><img class="logo-linkedin" src="Imagenes/34385570ee56b07400fd9b1d0f320e36-removebg-preview.png" alt="Logo de Linkedin"></a>
+                <a href="https://github.com/ValeAngeletti"><img class="logo-github" src="Imagenes/png-transparent-github-repository-computer-icons-logo-github-blue-git-software-repository-removebg-preview.png" alt="Logo de Github"></a>
+        </header>
+
+        <main class="contenedor-padre">
+
+            <section class="primera-parte">
+
+                <textarea id="primer-textarea" placeholder="Ingrese su texto ... " cols="auto" rows="8"></textarea>
+
+                <div class="condiciones">
+                    <img class="signo-exclamacion" src="Imagenes/—Pngtree—exclamation mark 3d icon design_5592466.png" alt="imagen de signo de exclamacion en color azul">
+                    <p class="parrafo-condiciones">No ingresar mayúsculas, números ni caracteres especiales </p>
+                </div>
+
+                <div class="botones">
+                    <button 
+                    id="btnEncriptar" class="boton-encriptar">Encriptar</button>
+                    <button
+                    id="btnDesencriptar" class="boton-desencriptar">Desencriptar</button>
+                </div>
+            </section>
+
+            <div class="segundo-textarea">
+
+                <textarea id="exibidor-mensaje" class="exibidor" cols="10" rows="20" readonly></textarea>
+
+                <div id="parrafo-exibidor"> 
+                    <p id="parrafo1"
+                    class="mensaje-exibidor" >No se encontró</p>
+                    <p id="parrafo2 "
+                    class="mensaje-exibidor2" >ningún mensaje</p>
+                </div>
+                
+                <img  id="imagen"
+                class="imagen-gato" src="Imagenes/891ecba5dea7a7c9f5a1885430a3a7a6-removebg-preview.png" alt="imagen de un gato gris durmiendo spbre una computadora">
+
+                <button id="btn-copiar" class="boton-copiar">Copiar</button>
+            </div>
+
+            
+        </main>
+
+        <script src="logica.js"></script>
+
+    </body>
+</html>

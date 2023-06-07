@@ -1,0 +1,201 @@
+
+body{
+    background: rgb(7, 7, 22) ;
+    font-family:'Quicksand', sans-serif;
+    color: white;
+}
+
+
+.logoAlura{
+    margin: 3% 0 0 3%;
+    width: 31px;
+    height: 48px;
+   position: absolute;
+    
+}
+
+.logo-linkedin{
+    margin: 40% 0 0 2.3%;
+    width: 50px;
+    height: 48px;
+    position: absolute;
+    border-radius: 50%;
+    border:none;
+}
+
+.logo-github{
+    margin:44% 0 0 1.8%;
+    width: 60px;
+    height: 40px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.logo-github:hover, .logo-linkedin:hover{
+
+    border-color:rgb(0, 153, 255) ;
+    box-shadow: 0px 0px 20px rgb(0, 149, 248);
+    transform: scale(1.1);
+    transition: 1s all;
+}
+
+.contenedor-padre{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#primer-textarea{
+    width: 650px;
+    height: 400px;
+    margin: 10% 0 2% 0;
+    padding: 10px;
+    font-family:'Quicksand', sans-serif;
+    font-size: 32px;
+    border: none;
+    background-color: rgb(7, 7, 22);
+    opacity: 0.5;
+    color: whitesmoke;
+    resize: none;
+    border-radius: 5%;
+}
+
+#primer-textarea::placeholder{
+    position: absolute;
+    font-size: 32px;
+    color: whitesmoke;
+}
+
+#primer-textarea:focus {
+    outline: none;
+    border-color: transparent;
+}
+
+.condiciones{
+    white-space: nowrap;
+    margin: 2% 0 0 0 ;
+}
+
+.signo-exclamacion{
+    width: 16px;
+    height: 16px;
+    background-color: rgb(2, 19, 37);
+    border-radius: 50%;
+    padding: 3px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.parrafo-condiciones{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+textarea::placeholder{
+    font-family:'Quicksand', sans-serif;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 2% 0 0 0;
+}
+
+.boton-encriptar{
+    width: 328px;
+    height: 67px;
+    font-size: 16px;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    border:none;
+    background-color: rgb(7, 7, 22);
+    color: white;
+    
+}
+
+.boton-encriptar:hover, .boton-copiar:hover, .boton-desencriptar:hover{
+    transform: scale(1.1);
+    transition: 1s all;
+    font-size: 20px;
+    border-color:rgb(0, 153, 255) ;
+    box-shadow: 0px 0px 20px rgb(0, 149, 248);
+}
+
+.boton-desencriptar{
+    width: 328px;
+    height: 67px;
+    font-size: 16px;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    border:none;
+    background-color: rgb(15, 15, 46);
+    color: rgb(255, 255, 255);
+}
+
+.segundo-textarea{
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+#exibidor-mensaje{
+    width: 300px;
+    height: 418px;
+    margin: 25% 0 5% 10%;
+    background:linear-gradient(rgb(7, 7, 22) , rgb(255, 255, 255)) ;
+    font-family:'Quicksand', sans-serif;
+    font-size: 32px;
+    padding: 10px;
+    border-radius: 10%;
+    opacity: 0.5;
+    resize: none;
+    border:none;
+    text-align:center;
+}
+
+#parrafo-exibidor{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 3px;
+    position: absolute;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+    margin: 20% 0 0 9%;
+}
+
+.imagen-gato{
+    position: absolute;
+    margin:0 0 0 3%;
+    width: 300px;
+    height: 300px;
+}
+
+.boton-copiar{   
+    width: 328px;
+    height: 67px;
+    font-size: 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 24px;
+    margin: 10% 0 8% 8% ;
+    border:none;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.5;
+    
+}
+
+@media screen and (max-width:480px){
+    body{
+        background-color: red;
+    }
+}
+
+
